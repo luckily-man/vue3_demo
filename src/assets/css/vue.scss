@@ -1,0 +1,39 @@
+@import 'variables';
+@import 'mixins';
+@import 'help';
+// @import 'layout';
+
+
+.pwd-tip-style {
+    width: 40px;
+    height: 10px;
+    display: inline-block;
+    margin-top: 2px;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+
+// 数字后面添加下拉选项
+.define-num-unit-input {
+    .el-input-group {
+        width: 250px !important;
+
+        .el-input__inner {
+            text-align: center;
+        }
+
+
+        .el-input-group__append {
+            .el-select .el-input {
+                width: 70px;
+            }
+
+            .el-input__inner {
+                padding-left: 7px !important;
+                margin-right: 0px !important;
+            }
+        }
+    }
+}
