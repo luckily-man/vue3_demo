@@ -52,7 +52,7 @@
     </el-pagination>
   </div>
   <!-- 添加课程对话框 -->
-  <el-dialog v-model="dialogVisible" width="30%" :title="sort === 'add' ? '添加课程' : '修改课程'" :before-close="handleClose">{{form}}
+  <el-dialog v-model="dialogVisible" width="30%" :title="sort === 'add' ? '添加课程' : '修改课程'" :before-close="handleClose">
     <el-form :model="form" ref="formRef"  label-width="80px" :rules="rules">
       <el-form-item label="课程名称" prop="courseTitle">
         <el-input v-model="form.courseTitle" autocomplete="off" class="w-350"></el-input>
